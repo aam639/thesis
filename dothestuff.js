@@ -10,6 +10,9 @@ var MAXSOURCES = 256; //maxium source input set at an unlikey high range
 var numspeakers = 8; //let this value define matrix dimensitons for set up. 
 var numsources = 10; //
 
+//var DEFAULTRADIUS = 0.3;
+var DEFAULTRADIUS = 1.0;
+
 var positions = new JitterMatrix(3, "float32", MAXSPEAKERS); // matrix: x,y,z, speakernumber
 var radiuses = new JitterMatrix(1, "float32", MAXSPEAKERS, MAXSOURCES); // matrix: radius coefficient 
 var colors = new JitterMatrix(4, "float32", MAXSPEAKERS); // matrix: RGBW 
@@ -85,7 +88,7 @@ function randomize()
 			colors.setcell1d(i, rrand(), rrand(), rrand(), 1.);
 			for(j = 0;j<numsources;j++)
 			{
-					radiuses.setcell2d(i,j,0.3);
+					radiuses.setcell2d(i,j,DEFAULTRADIUS);
 					//radiuses.setcell2d(i,j,rrand());
 			}
 			
