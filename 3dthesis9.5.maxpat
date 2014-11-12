@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 9,
+			"revision" : 6,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 19.0, 71.0, 1336.0, 729.0 ],
+		"rect" : [ 4.0, 45.0, 1026.0, 741.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,122 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-21",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2518.837646, 1154.735596, 50.0, 18.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-46",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 189.98822, 1312.304443, 279.0, 33.0 ],
+					"text" : "Bangs to the thispoly~ object which controls voice allocation and muting. \n"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-45",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 228.931976, 1236.498901, 273.78299, 20.0 ],
+					"text" : "Send the files path to each instance of the poly~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"frgb" : 0.0,
+					"id" : "obj-110",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 146.739197, 1169.297485, 448.392731, 36.0 ],
+					"text" : "reg, store a list in right inlet, bang it out later. So get the file path, and then bang after number of voices is found"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-43",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 219.009216, 1120.797485, 156.0, 33.0 ],
+					"text" : "Set the number of sources to this"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-42",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 169.239197, 1051.797485, 150.0, 33.0 ],
+					"text" : "How many files in this folder? "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-40",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 154.973984, 980.959473, 440.157959, 20.0 ],
+					"text" : "path, message 'types' which outputs all files in a given folder, 'file path again'"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-30",
+					"linecount" : 5,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 280.840973, 873.622375, 188.423981, 72.0 ],
+					"text" : "\"Macintosh HD:/Users/ana/Documents/NYU/Max Patches/THESIS/3D/NEWNEW/audio/\""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -61,12 +177,12 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-16",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 247.664215, 950.0, 197.0, 47.0 ],
-					"text" : "Every time you remake instances, they loose all files 'open.' So you hvae to make sure it's all in order.  "
+					"patching_rect" : [ 502.0, 1312.304443, 206.0, 60.0 ],
+					"text" : "Why Delay? Every time you remake instances, they loose all files 'open.' So you have to make sure it's all in order.  "
 				}
 
 			}
@@ -80,7 +196,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.6642, 691.0, 150.0, 47.0 ],
+					"patching_rect" : [ 24.009201, 799.297485, 150.0, 47.0 ],
 					"text" : "Loading in files in directory, this will make x many poly~ "
 				}
 
@@ -94,7 +210,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 98.664207, 1094.0, 33.0, 20.0 ],
+					"patching_rect" : [ 102.009209, 1202.297485, 33.0, 20.0 ],
 					"text" : "t b s"
 				}
 
@@ -108,7 +224,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 108.664207, 1061.0, 40.0, 20.0 ],
+					"patching_rect" : [ 102.009209, 1169.297485, 46.0, 20.0 ],
 					"text" : "zl reg"
 				}
 
@@ -122,7 +238,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 112.664207, 984.0, 55.0, 20.0 ],
+					"patching_rect" : [ 102.009209, 1093.62854, 55.0, 20.0 ],
 					"text" : "t b i"
 				}
 
@@ -135,7 +251,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 148.664215, 1019.0, 77.0, 20.0 ],
+					"patching_rect" : [ 138.009216, 1127.297485, 77.0, 20.0 ],
 					"text" : "s numvoices"
 				}
 
@@ -150,7 +266,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 127.664207, 950.0, 50.0, 20.0 ]
+					"patching_rect" : [ 105.009209, 1058.297485, 50.0, 20.0 ]
 				}
 
 			}
@@ -163,7 +279,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "types", "" ],
-					"patching_rect" : [ 112.664207, 870.0, 65.0, 20.0 ],
+					"patching_rect" : [ 83.009209, 980.959473, 65.0, 20.0 ],
 					"text" : "t s types s"
 				}
 
@@ -177,7 +293,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 105.664207, 917.297485, 41.0, 20.0 ],
+					"patching_rect" : [ 83.009209, 1028.256958, 41.0, 20.0 ],
 					"text" : "folder"
 				}
 
@@ -190,7 +306,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 98.664207, 1208.0, 82.0, 20.0 ],
+					"patching_rect" : [ 102.009209, 1312.304443, 82.0, 20.0 ],
 					"text" : "send loaditup"
 				}
 
@@ -204,7 +320,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 98.664207, 1167.0, 69.0, 20.0 ],
+					"patching_rect" : [ 102.009209, 1275.297485, 69.0, 20.0 ],
 					"text" : "delay 2000"
 				}
 
@@ -217,7 +333,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 112.664207, 1128.0, 93.0, 20.0 ],
+					"patching_rect" : [ 116.009209, 1236.297485, 93.0, 20.0 ],
 					"text" : "send audiopath"
 				}
 
@@ -231,7 +347,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 89.664207, 837.0, 57.0, 18.0 ],
+					"patching_rect" : [ 83.009209, 945.297485, 57.0, 18.0 ],
 					"text" : "$1audio/"
 				}
 
@@ -245,7 +361,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 39.6642, 803.0, 69.0, 20.0 ],
+					"patching_rect" : [ 31.009201, 911.297485, 69.0, 20.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -260,7 +376,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 37.6642, 772.0, 34.0, 18.0 ],
+					"patching_rect" : [ 31.009201, 880.297485, 34.0, 18.0 ],
 					"text" : "path"
 				}
 
@@ -274,7 +390,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 30.6642, 738.0, 60.0, 20.0 ],
+					"patching_rect" : [ 31.009201, 846.297485, 60.0, 20.0 ],
 					"text" : "loadbang"
 				}
 
@@ -400,8 +516,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 600.0, 177.0, 41.0, 18.0 ],
-					"text" : "-1576"
+					"patching_rect" : [ 600.0, 177.0, 32.5, 18.0 ],
+					"text" : "1"
 				}
 
 			}
@@ -442,8 +558,8 @@
 					"name" : "3DGUI2.0.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"offset" : [ -1576.0, 0.0 ],
-					"patching_rect" : [ 502.0, 246.580551, 2004.656128, 599.716919 ],
+					"offset" : [ 1.0, 0.0 ],
+					"patching_rect" : [ 502.0, 242.944183, 2004.656128, 588.443359 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.320507, 36.502052, 1201.177246, 600.586792 ],
 					"varname" : "3DGUI2.0"
@@ -463,11 +579,11 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 9,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 22.0, 45.0, 1186.0, 719.0 ],
+						"rect" : [ 404.0, 45.0, 776.0, 809.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -486,7 +602,87 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-59",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 950.0, 21.0, 20.0, 20.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-53",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 680.0, 13.0, 48.0, 20.0 ],
+									"text" : "r recon"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-83",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 912.0, 120.0, 48.0, 20.0 ],
+									"text" : "s GUIp"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-55",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 790.0, 264.0, 60.0, 20.0 ],
+									"text" : "s toGUIR"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-17",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "int" ],
+									"patching_rect" : [ 849.0, 126.000008, 34.0, 20.0 ],
+									"text" : "t b 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-39",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 1104.0, 83.0, 150.0, 20.0 ],
+									"text" : "114 = record, 112 = play"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
@@ -509,7 +705,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 342.0, 555.0, 62.0, 20.0 ],
+									"patching_rect" : [ 346.848572, 556.818176, 62.0, 20.0 ],
 									"text" : "zl change"
 								}
 
@@ -736,7 +932,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 725.0, 387.0, 132.0, 27.0 ],
+									"patching_rect" : [ 787.607727, 372.426575, 132.0, 27.0 ],
 									"text" : "send recordme"
 								}
 
@@ -750,7 +946,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 744.892273, 361.259613, 51.0, 18.0 ],
+									"patching_rect" : [ 842.0, 334.686188, 51.0, 18.0 ],
 									"text" : "p $1 $2"
 								}
 
@@ -778,7 +974,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 692.892273, 361.259613, 48.0, 18.0 ],
+									"patching_rect" : [ 790.0, 334.686188, 48.0, 18.0 ],
 									"text" : "r $1 $2"
 								}
 
@@ -828,7 +1024,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 864.5, 126.000008, 20.0, 20.0 ]
+									"patching_rect" : [ 842.0, 100.0, 20.0, 20.0 ]
 								}
 
 							}
@@ -849,11 +1045,11 @@
 									"fontsize" : 18.0,
 									"id" : "obj-34",
 									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 3,
-									"outlettype" : [ "bang", "bang", "" ],
-									"patching_rect" : [ 790.0, 56.0, 101.0, 27.0 ],
-									"text" : "sel 114 112"
+									"numinlets" : 4,
+									"numoutlets" : 4,
+									"outlettype" : [ "bang", "bang", "bang", "" ],
+									"patching_rect" : [ 790.0, 57.0, 116.0, 27.0 ],
+									"text" : "sel 114 112 0"
 								}
 
 							}
@@ -1554,7 +1750,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-32", 0 ],
+									"destination" : [ "obj-17", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-11", 0 ]
@@ -1815,6 +2011,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-32", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-17", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-16", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -2004,6 +2209,24 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-83", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-34", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-34", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-41", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -2026,6 +2249,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-369", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-59", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-37", 0 ]
 								}
 
 							}
@@ -2143,6 +2375,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-52", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-34", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-53", 0 ]
 								}
 
 							}
@@ -2281,6 +2522,15 @@
 								}
 
 							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-55", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
  ]
 					}
 ,
@@ -2315,7 +2565,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 9,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -3163,7 +3413,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 9,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -3414,7 +3664,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 9,
+											"revision" : 6,
 											"architecture" : "x86"
 										}
 ,
@@ -4864,7 +5114,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 9,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -5697,7 +5947,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 9,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -5987,7 +6237,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 9,
+											"revision" : 6,
 											"architecture" : "x86"
 										}
 ,
@@ -6762,7 +7012,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 9,
+											"revision" : 6,
 											"architecture" : "x86"
 										}
 ,
@@ -9172,7 +9422,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 9,
+							"revision" : 6,
 							"architecture" : "x86"
 						}
 ,
@@ -10874,6 +11124,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-30", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-32", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -11010,21 +11269,21 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "dothestuff.js",
-				"bootpath" : "/Users/lukedubois/Documents/TEACHING/nyu/mtech/thesis/adriana/thesis",
+				"bootpath" : "/Users/ana/Documents/NYU/Max Patches/THESIS/3D/NEWNEW",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "polyvoices.maxpat",
-				"bootpath" : "/Users/lukedubois/Documents/TEACHING/nyu/mtech/thesis/adriana/thesis",
+				"bootpath" : "/Users/ana/Documents/NYU/Max Patches/THESIS/3D/NEWNEW",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "3DGUI2.0.maxpat",
-				"bootpath" : "/Users/lukedubois/Documents/TEACHING/nyu/mtech/thesis/adriana/thesis",
+				"bootpath" : "/Users/ana/Documents/NYU/Max Patches/THESIS/3D/NEWNEW",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

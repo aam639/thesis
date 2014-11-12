@@ -11,12 +11,12 @@ var numspeakers = 8; //let this value define matrix dimensitons for set up.
 var numsources = 10; //
 
 //var DEFAULTRADIUS = 0.3;
-var DEFAULTRADIUS = 1.0;
+var DEFAULTRADIUS = 0.4;
 
 var positions = new JitterMatrix(3, "float32", MAXSPEAKERS); // matrix: x,y,z, speakernumber
 var radiuses = new JitterMatrix(1, "float32", MAXSPEAKERS, MAXSOURCES); // matrix: radius coefficient 
 var colors = new JitterMatrix(4, "float32", MAXSPEAKERS); // matrix: RGBW 
-var currentradiuses = new JitterMatrix(1, "float32", MAXSPEAKERS); // matrix: radius coefficient 
+var currentradiuses = new JitterMatrix(1, "float32", MAXSPEAKERS, MAXSOURCES); // matrix: radius coefficient 
 currentradiuses.usesrcdim = 1; 
 
 var whichsource = 0; 
@@ -45,7 +45,7 @@ function speakeramt(numOfSpeakers)
 // the correct source/speaker used last time. 
 function queryradius(source, speaker)
 {
-		var p = radiuses.getcell(source, speaker);
+		var p = radiuses.getcell(speaker, source);
 		outlet(3, "radius", p);
 }
 
@@ -66,10 +66,10 @@ function subsource(v)
 }
 
 //The function 'changeradius' updates the cell value of appropriate source/speaker cell in 
-//radiuses matrix. 
+//radiuses matrix.     
 function changeradius(source, speaker, r)
-{
-		radiuses.setcell2d(speaker, source, r);
+{  
+ 		radiuses.setcell2d(speaker, source, r); 
 }
 
 //When you receive 'movespeaker,' update cells: speaker number (inlet navigated), x, y, z
