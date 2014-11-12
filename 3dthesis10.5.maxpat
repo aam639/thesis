@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 6,
+			"revision" : 9,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 2.0, 45.0, 977.0, 478.0 ],
+		"rect" : [ 2.0, 45.0, 1343.0, 802.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,34 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-66",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 161.0, 50.0, 69.0, 20.0 ],
+					"text" : "delay 1000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-65",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 161.0, 18.0, 60.0, 20.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -73,13 +101,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-41",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 257.144196, 1233.0, 284.0, 31.0 ],
-					"text" : "\"Macintosh HD:/Users/ana/Documents/NYU/Max Patches/THESIS/3D/NEWNEW/audio/\""
+					"text" : "\"Macintosh HD:/Users/lukedubois/Documents/TEACHING/nyu/mtech/thesis/adriana/thesis/audio/\""
 				}
 
 			}
@@ -1014,11 +1042,11 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 325.0, 45.0, 1115.0, 484.0 ],
+						"rect" : [ 8.0, 59.0, 1288.0, 711.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1037,7 +1065,6 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -1048,7 +1075,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 781.25, 449.0, 50.0, 18.0 ],
-									"text" : "r 0 2"
+									"text" : "r 0 1"
 								}
 
 							}
@@ -1062,7 +1089,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 841.0, 449.0, 50.0, 18.0 ],
-									"text" : "p 0 2"
+									"text" : "p 0 1"
 								}
 
 							}
@@ -3244,7 +3271,7 @@
 									"destination" : [ "obj-23", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"source" : [ "obj-136", 8 ]
+									"source" : [ "obj-136", 16 ]
 								}
 
 							}
@@ -3263,15 +3290,6 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-136", 6 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-7", 15 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-136", 16 ]
 								}
 
 							}
@@ -4443,7 +4461,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -5291,7 +5309,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -5325,7 +5343,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 387.0, 123.0, 50.0, 31.0 ],
-									"text" : "radius 0.4"
+									"text" : "radius 0"
 								}
 
 							}
@@ -5568,7 +5586,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 6,
+											"revision" : 9,
 											"architecture" : "x86"
 										}
 ,
@@ -7027,7 +7045,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -7833,7 +7851,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -8009,7 +8027,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 6,
+											"revision" : 9,
 											"architecture" : "x86"
 										}
 ,
@@ -8784,7 +8802,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 6,
+											"revision" : 9,
 											"architecture" : "x86"
 										}
 ,
@@ -10842,7 +10860,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 6,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -12955,6 +12973,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-66", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-65", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-66", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -13082,21 +13118,21 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "3DGUI2.0.maxpat",
-				"bootpath" : "/Users/ana/Documents/NYU/Max Patches/THESIS/3D/NEWNEW",
+				"bootpath" : "/Users/lukedubois/Documents/TEACHING/nyu/mtech/thesis/adriana/thesis",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dothestuff.js",
-				"bootpath" : "/Users/ana/Documents/NYU/Max Patches/THESIS/3D/NEWNEW",
+				"bootpath" : "/Users/lukedubois/Documents/TEACHING/nyu/mtech/thesis/adriana/thesis",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "polyvoices2.maxpat",
-				"bootpath" : "/Users/ana/Documents/NYU/Max Patches/THESIS/3D/NEWNEW",
+				"bootpath" : "/Users/lukedubois/Documents/TEACHING/nyu/mtech/thesis/adriana/thesis",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
